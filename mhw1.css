@@ -1,0 +1,233 @@
+
+
+nav{
+  background-color: rgb(255, 255, 255,0.5);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  height: 50px;
+  width:100%;
+  position: fixed;
+  top: 0;
+  z-index:1;
+}
+nav a{
+  padding: 5px 15px;
+  color: black;
+  font-family: 'Ubuntu', sans-serif;
+  font-size:16px;
+  margin: 20px;
+}
+#button{
+  border-radius: 50px;
+  border: 2px solid black;
+}
+#menu{
+  display:none;
+}
+#menu div{
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin:5px 15px;
+}
+
+header{
+  display:flex;
+  height:500px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/Users/carla/Desktop/mhw1/img/background.jpg);
+  background-size: cover;
+  background-position: center;
+  position:relative;
+}
+
+#overlay{
+  background-color:rgba(0,0,0,.3);
+  position:absolute;
+  top:0;
+  bottom:0;
+  margin:0;
+  height:100%;
+  width:100%;
+}
+
+header h1{
+  max-width: 780px;
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+  font-size:60px;
+  font-weight:normal;
+  z-index:1;
+  text-align: center;
+}
+
+#profile{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position:relative;
+  margin-top:-50px;
+}
+
+#profile img{
+  background-color:white;
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  border: 3px solid black;
+  z-index: 1;
+}
+
+#profile p{
+  margin: 3px;
+  font-family:'Ubuntu', sans-serif; 
+  font-size:15px;
+  color:black;
+  text-align: center;
+}
+
+body{
+  background-color:rgba(160, 149, 119, 0.3);
+  margin:0;
+}
+
+article{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section{
+  width:66.67%;
+}
+
+.paragraph{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top:60px;
+  margin-bottom: 120px;
+}
+
+.name{
+  margin-bottom: 20px;
+}
+
+.index{
+  margin-right: 40px;
+}
+
+.text{
+  margin: 20px 0px;
+}
+
+#parmigiana{
+  margin-top: 20px;
+  background-image: url(/Users/carla/Desktop/mhw1/img/parmigiana.jpg);
+  height:500px;
+  background-size: cover;
+  background-position: center;
+}
+
+#carbonara{
+  margin-top: 20px;
+  background-image: url(/Users/carla/Desktop/mhw1/img/carbonara.jpg);
+  height:500px;
+  background-size: cover;
+  background-position: center;
+}
+
+#lasagne{
+  margin-top: 20px;
+  background-image: url(/Users/carla/Desktop/mhw1/img/lasagne.jpg);
+  height:500px;
+  background-size: cover;
+  background-position: center;
+}
+
+#pizza{
+  margin-top: 20px;
+  background-image: url(/Users/carla/Desktop/mhw1/img/pizza.jpg);
+  height:500px;
+  background-size: cover;
+  background-position: center;
+}
+
+#tiramisu{
+  margin-top: 20px;
+  background-image: url(/Users/carla/Desktop/mhw1/img/tiramisu.jpg);
+  height:500px;
+  background-size: cover;
+  background-position: center;
+}
+
+.name, .index{
+  color: black;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: left;
+}
+.text, .time{
+  font-family: 'Ubuntu', sans-serif;
+  color:black;
+  text-align: left;
+  font-size: 15px;
+  font-weight: lighter;
+  line-height: 20px;
+}
+
+@media (max-width:500px){
+  #links{
+    display: none;
+  }
+  #menu{
+    display: block;
+  }
+
+  header{
+    height: 300px;
+  }
+  header h1{
+    font-size: 30px;
+  }
+
+  section{
+    width:90%;
+  }
+  .name, .index{
+    font-size:30px;
+  }
+  #parmigiana,#carbonara,#lasagne,#pizza,#tiramisu{
+    height: 200px;
+  }
+  .index{
+    margin-right: 20px;
+    }
+    
+}
+
+footer{
+  background-color:rgba(160, 149, 119, 0.521);
+  display:flex;
+  align-items:center;
+  flex-direction: column;
+  justify-content: center;
+  font-family:'Ubuntu', sans-serif;
+  color:white;
+  font-size:15px;
+  text-align: center;
+  line-height: 0px;
+  padding:30px;
+}
+
+footer p strong{
+  font-size:20px;
+}
+
